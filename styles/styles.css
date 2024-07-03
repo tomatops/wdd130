@@ -1,40 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
+
 h1 {
     color: steelblue;
 }
+
 main img {
+    float: right;
     width: 150px;
     height: auto;
+    margin-bottom: 0.2rem;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
 p {
     padding: 0;
 }
+
 aside {
+    position: relative;
     width: 20rem;
+    text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 0.8rem;
+    left: 6.5rem;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid steelblue;
+    text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    clear: right;
     margin: 0.3rem;
     border: 2px solid rgba(0, 0, 0, 0.1);
     padding: 0.2rem;
     background-color: rgba(49, 105, 150, 0.7);
     color: white;
-    text-align: center;
-}
-aside img {
-    width: 200px;
-    height: auto;
-}
-footer {
-    margin-top: 1rem;
-    border-top: 1px solid steelblue;
-    text-align: center;
 }
