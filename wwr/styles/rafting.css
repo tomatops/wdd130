@@ -20,7 +20,7 @@ html {
 }
 
 header {
-    display: flex;
+    display: grid;
     margin: 0 auto;
     padding: 0;
     padding-left: 3rem;
