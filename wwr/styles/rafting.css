@@ -19,14 +19,88 @@ html {
     max-width: 960px;
 }
 
+header {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 3rem;
+    justify-content: start;
+    align-items: center;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav a {
+    margin: 0.3rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+}
+
+header nav a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
 p {
     font-family: var(--paragraph-font);
 }
+
+figure {
+    max-width: 9rem;
+    font-family: var(--paragraph-font);
+    font-weight: 300;
+    margin: 0 auto;
+    background-color: var(--accent2-color);
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+}
+
+figure img {
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.6);
+}
+
+figcaption {
+    padding-top: 0.6rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding: 0 0.8rem;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Class Selectors */
 
 .hero {
     position: relative;
@@ -47,7 +121,7 @@ p {
     font-size: 3rem;
     font-weight: 700;
     color: white;
-    text-shadow: 0 1px 20px black;
+    text-shadow: 0 0.4rem 0.6rem black;
 }
 
 .hero article {
@@ -63,13 +137,51 @@ p {
 
 .hero article img {
     float: right;
-    width: 300px;
+    width: 19rem;
 }
 
 .hero article p {
     margin-right: 20rem;
 }
 
-footer a {
-    text-decoration: none;
+.history {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.7rem;
+    padding: 1rem;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: start;
+    background-color: gainsboro;
+}
+
+.history-title, .adventure-title {
+    margin: 0 auto;
+    margin-bottom: 0.9rem;
+    border-bottom: 0.3rem solid var(--accent2-color);
+}
+
+.history-title {
+    width: 8rem;
+}
+
+.adventure-title {
+    width: 19rem;
+}
+
+.adventure {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1rem 0;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+.sociallinks a {
+    background-color: white;
+    margin: 0.6rem;
+    padding: 0.2rem;
+    border-radius: 2rem;
 }
