@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0 auto;
+}
+
+body, button {
+    font-family: Onest, sans-serif;
+}
+
+h1 {
+    padding: 0.6rem;
+    text-align: center;
+    background-color: #3d78a9;
+    color: white;
+}
+
+form {
+    display: grid;
+    width: 27rem;
+    margin: 1.3rem;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+    background-color: white;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+legend  {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #3d78a9;
+}
+
+input, select, textarea {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+    width: 1.8rem;
+    height: 1.8rem;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1.5rem auto;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border: 0.1rem solid #3d78a9;
+    border-radius: 2rem;
+    background-color: #3d78a9;
+    color: white;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #3d78a9;
+    color: white;
+}
+
+/* Class Selectors */
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 1fr 2fr;
+}
