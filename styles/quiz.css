@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, button {
+    font-family: Onest, sans-serif;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 0.6rem;
+    text-align: center;
+    background-color: #3d78a9;
+    color: white;
+}
+
+form {
+    width: 26rem;
+    margin: 2rem auto;
+    background-color: rgba(185, 230, 249, 0.8);
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 1.5rem;
+    align-items: center;
+    padding: 1.6rem;
+}
+
+legend {
+    max-width: 26rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: #3d78a9;
+    color: white;
+}
+
+img, input, textarea, select {
+    width: 100%;
+    margin: 0.7rem auto;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 10rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: 1px solid #3d78a9;
+    background-color: #3d78a9;
+    color: white;
+}
