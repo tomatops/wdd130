@@ -40,6 +40,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 header nav a {
@@ -66,9 +67,7 @@ p {
 }
 
 figure {
-    max-width: 9rem;
     font-family: var(--paragraph-font);
-    font-weight: 300;
     margin: 0 auto;
     background-color: var(--accent2-color);
     padding: 0.7rem;
@@ -82,6 +81,62 @@ figure img {
 
 figcaption {
     padding-top: 0.6rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+    grid-row: span 2;
+    border-radius: 1rem;
+    font-family: var(--paragraph-font);
+    font-size: 1.1rem;
+    background-color: white;
+}
+
+legend {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--accent1-color);
+}
+
+fieldset {
+    padding: 1.6rem;
+    border: none;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+input, textarea {
+    font-family: Onest;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+}
+
+button {
+    margin-top: 1rem;
+    margin-left: 6.5rem;
+    padding: 0.8rem 1rem;
+    font-family: Onest;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 4rem;
+    background-color: var(--nav-background-color);
+    color: white;
 }
 
 footer {
@@ -178,6 +233,101 @@ footer a {
     justify-content: center;
     text-align: center;
     background-color: white;
+}
+
+.adventure-image {
+    max-width: 9rem;
+    font-weight: 300;
+}
+
+.heading {
+    margin: 0 auto;
+    width: 10rem;
+    border-bottom: 0.3rem solid var(--accent2-color);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-top: 9px solid var(--secondary-color);
+    background-color: gainsboro;
+}
+
+.phone, .email, .address {
+    display: grid;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.phone, .email {
+   order: 1;
+   height: 210px;
+   justify-content: center;
+   align-content: center;
+   justify-items: center;
+   align-items: center;
+   margin-bottom: 1.5rem;
+}
+
+.phone img, .email img {
+    margin-bottom: 1rem;
+}
+
+.address {
+   height: 510px;
+   grid-row: span 2;
+   grid-template-columns: 1fr 9fr;
+   margin-right: 1.9rem;
+}
+
+.address iframe {
+    grid-column: span 2;
+}
+
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2rem 0;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+.employee {
+    max-width: 16rem;
+    font-weight: 400;
+}
+
+.caption {
+    font-weight: 400;
+}
+
+.requestform {
+    display: grid;
+    margin-top: 2.5rem;
+    padding: 2rem;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+.form-item {
+    padding-top: 1rem;
+}
+.form-heading {
+    margin-right: 2rem;
+}
+
+.form-heading h2 {
+    font-size: 3rem;
+    color: white;
 }
 
 .sociallinks a {
