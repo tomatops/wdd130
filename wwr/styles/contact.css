@@ -66,22 +66,76 @@ p {
 }
 
 figure {
-    max-width: 9rem;
+    max-width: 13rem;
     font-family: var(--paragraph-font);
-    font-weight: 300;
     margin: 0 auto;
     background-color: var(--accent2-color);
-    padding: 0.7rem;
+    padding: 1rem;
     border-radius: 0.4rem;
 }
 
 figure img {
-    border-radius: 0.4rem;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.6);
 }
 
 figcaption {
     padding-top: 0.6rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    box-sizing: border-box;
+    grid-row: span 2;
+    border-radius: 1rem;
+    font-family: var(--paragraph-font);
+    font-size: 1.1rem;
+    background-color: white;
+}
+
+legend {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--accent1-color);
+}
+
+fieldset {
+    padding: 1.6rem;
+    border: none;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+input, textarea {
+    font-family: Onest;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+}
+
+button {
+    margin-top: 1rem;
+    margin-left: 6.5rem;
+    padding: 0.8rem 1rem;
+    font-family: Onest;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 4rem;
+    background-color: var(--nav-background-color);
+    color: white;
 }
 
 footer {
@@ -103,81 +157,89 @@ footer a {
 
 /* Class Selectors */
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
-    text-shadow: 0 0.4rem 0.6rem black;
-}
-
-.hero article {
-    position: absolute;
-    top: 10rem;
-    right: 0;
-    left: 0;
-    padding: 1rem 3rem 1rem 4rem;
-    font-weight: 100;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.hero article img {
-    float: right;
-    width: 19rem;
-}
-
-.hero article p {
-    margin-right: 20rem;
-}
-
-.history {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1.7rem;
-    padding: 1rem;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: start;
-    background-color: gainsboro;
-}
-
-.history-title, .adventure-title {
+.heading {
     margin: 0 auto;
-    margin-bottom: 0.9rem;
+    width: 10rem;
     border-bottom: 0.3rem solid var(--accent2-color);
 }
 
-.history-title {
-    width: 8rem;
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-top: 9px solid var(--secondary-color);
+    background-color: gainsboro;
 }
 
-.adventure-title {
-    width: 19rem;
+.phone, .email, .address {
+    display: grid;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
 }
 
-.adventure {
+.phone, .email {
+   order: 1;
+   height: 210px;
+   justify-content: center;
+   align-content: center;
+   justify-items: center;
+   align-items: center;
+   margin-bottom: 1.5rem;
+}
+
+.phone img, .email img {
+    margin-bottom: 1rem;
+}
+
+.address {
+   height: 510px;
+   grid-row: span 2;
+   grid-template-columns: 1fr 9fr;
+   margin-right: 1.9rem;
+}
+
+.address iframe {
+    grid-column: span 2;
+}
+
+.employees {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 1rem 0;
+    margin: 2rem 0;
     justify-content: center;
     text-align: center;
     background-color: white;
+}
+
+.caption {
+    font-weight: 400;
+}
+
+.requestform {
+    display: grid;
+    margin-top: 2.5rem;
+    padding: 2rem;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+.form-item {
+    padding-top: 1rem;
+}
+.form-heading {
+    margin-right: 2rem;
+}
+
+.form-heading h2 {
+    font-size: 3rem;
+    color: white;
 }
 
 .sociallinks a {
