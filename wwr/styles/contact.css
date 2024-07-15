@@ -40,6 +40,11 @@ nav {
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--accent2-color);
 }
 
 header nav a {
