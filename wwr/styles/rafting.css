@@ -43,10 +43,6 @@ a {
     color: white;
 }
 
-a:hover {
-    color: var(--accent2-color);
-}
-
 header nav a {
     margin: 0.3rem;
     padding: 0.5rem 0.9rem;
@@ -158,6 +154,10 @@ footer {
 
 footer a {
     text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent2-color);
 }
 
 /* Class Selectors */
