@@ -162,26 +162,34 @@ footer a:hover {
 
 /* Class Selectors */
 
-.hero {
+.hero, .hero2 {
     position: relative;
 }
 
-.hero img {
+.hero img, .hero2 img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1 {
+.hero h1, .hero2 h1 {
     position: absolute;
-    top: 2rem;
     left: 0;
     right: 0;
     text-align: center;
-    font-size: 3rem;
     font-weight: 700;
     color: white;
     text-shadow: 0 0.4rem 0.6rem black;
+}
+
+.hero h1 {
+    top: 2rem;
+    font-size: 3rem;
+}
+
+.hero2 h1 {
+    top: 8rem;
+    font-size: 5rem;
 }
 
 .hero article {
@@ -215,7 +223,7 @@ footer a:hover {
     background-color: gainsboro;
 }
 
-.history-title, .adventure-title {
+.history-title, .adventure-title, .trips-title {
     margin: 0 auto;
     margin-bottom: 0.9rem;
     border-bottom: 0.3rem solid var(--accent2-color);
@@ -227,6 +235,10 @@ footer a:hover {
 
 .adventure-title {
     width: 19rem;
+}
+
+.trips-title {
+    width: 5rem;
 }
 
 .adventure {
@@ -243,6 +255,8 @@ footer a:hover {
     max-width: 9rem;
     font-weight: 300;
 }
+
+/* Contact CSS */
 
 .heading {
     margin: 0 auto;
@@ -333,6 +347,123 @@ footer a:hover {
     font-size: 3rem;
     color: white;
 }
+
+/* Trips CSS */
+
+.contact-btn {
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.contact-btn a {
+    font-family: var(--paragraph-font);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    box-shadow: 0 0.1rem 2.5rem black;
+}
+
+.contact-btn a:hover {
+    background-color: #15d1be;
+}
+
+.trips {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.trip1, .trip2, .trip3, .trip4 {
+    grid-column: span 2;
+    margin: 1rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    background-color: var(--accent2-color);
+}
+
+.trips img {
+    border-radius: 0.4rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.6);
+}
+
+.trip1 p, .trip2 p, .trip3 p, .trip4 p {
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.trip1 p, .trip2 p {
+    top: 0;
+}
+
+.trip1 p {
+    left: 16.5rem;
+}
+
+.trip2 p {
+    left: 46rem;
+}
+
+.trip3 p, .trip4 p {
+    top: 16rem;
+}
+
+.trip3 p {
+    left: 16rem;
+}
+
+.trip4 p {
+    left: 46.8rem;
+}
+
+.trip-btn {
+    display: grid;
+    margin-top: 0.5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.trip-btn a {
+    font-family: var(--paragraph-font);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+}
+
+.trip-btn a:hover, .trip-btn a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+table {
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+    text-align: center;
+    border: 0.3rem solid var(--accent2-color);
+
+}
+
+th, td {
+    padding: 1rem;
+}
+
+thead {
+    background-color: var(--accent2-color);
+}
+
+
+/* Footer */
 
 .sociallinks a {
     background-color: white;
