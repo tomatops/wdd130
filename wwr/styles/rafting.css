@@ -489,6 +489,10 @@ thead {
 
 /* Home CSS */
 
+.hero3 h1 {
+    max-width: 1100px;
+}
+
 .newsform {
     height: 18rem;
     display: grid;
