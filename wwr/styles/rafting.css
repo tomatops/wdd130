@@ -162,17 +162,17 @@ footer a:hover {
 
 /* Class Selectors */
 
-.hero, .hero2 {
+.hero, .hero2, .hero3 img {
     position: relative;
 }
 
-.hero img, .hero2 img {
+.hero img, .hero2 img, .hero3 img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1, .hero2 h1 {
+.hero h1, .hero2 h1, .hero3 h1 {
     position: absolute;
     left: 0;
     right: 0;
@@ -190,6 +190,27 @@ footer a:hover {
 .hero2 h1 {
     top: 8rem;
     font-size: 5rem;
+}
+
+.hero3 h1 {
+    display: flex;
+    top: 10rem;
+    left: -4rem;
+    font-size: 4.6rem;
+}
+
+.hero3 p {
+    width: 40rem;
+    display: flex;
+    position: absolute;
+    top: 24rem;
+    left: 10rem;
+    right: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    text-shadow: 0 0.2rem 0.3rem black;
 }
 
 .hero article {
@@ -223,7 +244,7 @@ footer a:hover {
     background-color: gainsboro;
 }
 
-.history-title, .adventure-title, .trips-title {
+.history-title, .adventure-title, .trips-title, .call-action h2 {
     margin: 0 auto;
     margin-bottom: 0.9rem;
     border-bottom: 0.3rem solid var(--accent2-color);
@@ -239,6 +260,10 @@ footer a:hover {
 
 .trips-title {
     width: 5rem;
+}
+
+.call-action h2 {
+    width: 50rem;
 }
 
 .adventure {
@@ -462,6 +487,74 @@ thead {
     background-color: var(--accent2-color);
 }
 
+/* Home CSS */
+
+.newsform {
+    height: 18rem;
+    display: grid;
+    margin-top: 2.5rem;
+    padding: 2rem;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+.newsform form {
+    height: 18rem;
+}
+
+.newsform h2 {
+   font-size: 2.5rem;
+}
+
+.call-action {
+    margin-top: 3rem;
+}
+
+.call-action h2 {
+    font-size: 2rem;
+}
+
+.link-trip {
+    margin: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.link-trip a {
+    font-family: var(--paragraph-font);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+.link-trip a:hover {
+    background-color: #15d1be;
+}
+
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5rem 0 3rem 0;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+.offers-image {
+    max-width: 20rem;
+    padding: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.offers figure {
+    background-color: var(--accent1-color);
+}
 
 /* Footer */
 
